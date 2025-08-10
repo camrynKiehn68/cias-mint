@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config()
 const fs = require('fs')
 const bip39 = require("bip39")
 const { crypto } = require("cosmos-lib")
@@ -30,6 +30,7 @@ async function generateCosmosWallets() {
 generateCosmosWallets().then(() => {
     console.log(`Wallets generated and saved to ${ process.env.WALLET_JSON_FILE}`);
 });
+
 
 
 
