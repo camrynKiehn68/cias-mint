@@ -1,6 +1,6 @@
 require('dotenv').config();
 const fs = require('fs');
-const bip39 = require("bip39");
+const bip39 = require("bip39")
 const { crypto } = require("cosmos-lib")
 const {DirectSecp256k1Wallet} = require("@cosmjs/proto-signing")
 
@@ -30,5 +30,6 @@ async function generateCosmosWallets() {
 generateCosmosWallets().then(() => {
     console.log(`Wallets generated and saved to ${ process.env.WALLET_JSON_FILE}`);
 });
+
 
 
